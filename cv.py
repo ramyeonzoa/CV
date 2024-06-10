@@ -58,7 +58,7 @@ st.markdown("""
             <span>|</span>
             <i class="fas fa-phone"></i> +82-10-9152-9812
             <span>|</span>
-            <i class="fas fa-home"></i><a href="" target="_blank"> www.web.site </a>
+            <i class="fas fa-home"></i><a href="" target="_blank"> mhc-cv.streamlit.app </a>
         </p> 
         </p> 
     </div>
