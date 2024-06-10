@@ -1,9 +1,11 @@
 import streamlit as st
 
+# Font Awesome 스타일을 포함한 HTML 추가
 st.markdown("""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 """, unsafe_allow_html=True)
 
+# 스타일 추가
 st.markdown("""
     <style>
         .contact-info {
@@ -44,13 +46,32 @@ st.markdown("""
             font-variant: small-caps;
             font-size: 2vw;
         }
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 4vw;
+            }
+            h1 {
+                font-size: 6vw;
+            }
+            .contact-info {
+                font-size: 4vw;
+            }
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .left, .right {
+                text-align: left;
+                width: 100%;
+            }
+        }
     </style>
 """, unsafe_allow_html=True)
 
-# title
-st.markdown("<h1 style='text-align: center; font-variant: small-caps; font-size: 3.5vw;'>Minhyuk Choi</h1>", unsafe_allow_html=True)
+# 제목과 소개 (가운데 정렬, 반응형 글씨 크기 및 Small Caps 적용)
+st.markdown("<h1 style='text-align: center; font-variant: small-caps;'>Minhyuk Choi</h1>", unsafe_allow_html=True)
 
-# contact
+# 기본 정보
 st.markdown("""
     <div class="contact-info">
         <p>
@@ -58,12 +79,10 @@ st.markdown("""
             <span>|</span>
             <i class="fas fa-phone"></i> +82-10-9152-9812
             <span>|</span>
-            <i class="fas fa-home"></i><a href="" target="_blank"> mhc-cv.streamlit.app </a>
-        </p> 
-        </p> 
+            <i class="fas fa-home"></i><a href="https://mhc-cv.streamlit.app" target="_blank">mhc-cv.streamlit.app</a>
+        </p>
     </div>
 """, unsafe_allow_html=True)
-
 
 # Interests
 st.markdown("---")
@@ -71,7 +90,6 @@ st.markdown("<h2 class='section-title'>Interests</h2>", unsafe_allow_html=True)
 st.write("""
 I am currently interested in Machine Learning and Information Security. After this semester, I plan to study Algorithms, Backend Development, Machine Learning, Mathematics, and English.
 """)
-
 
 # Educations
 st.markdown("---")
@@ -90,7 +108,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-
 # Services
 st.markdown("---")
 st.markdown("<h2 class='section-title'>Services</h2>", unsafe_allow_html=True)
@@ -107,7 +124,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-
 # Technical Skills
 st.markdown("---")
 st.markdown("<h2 class='section-title'>Technical Skills</h2>", unsafe_allow_html=True)
@@ -119,18 +135,12 @@ st.markdown("""
         </div>
         <div class="right">
             <div>Python, Java, C++</div>
-            <div>Korea(Native), English</div>
+            <div>Korean (Native), English</div>
         </div>
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("---")
 
-# # Projects
-# st.markdown("---")
-# st.markdown("<h2 class='section-title'>Projects</h2>", unsafe_allow_html=True)
-
-
-# # 끝
-# st.markdown("---")
-# st.write("Thank you for reviewing my CV!")
+# 끝
+st.write("Thank you for reviewing my CV!")
