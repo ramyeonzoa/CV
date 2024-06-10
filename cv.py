@@ -1,12 +1,9 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
-# Font Awesome 스타일을 포함한 HTML 추가
 st.markdown("""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 """, unsafe_allow_html=True)
 
-# 스타일 추가
 st.markdown("""
     <style>
         .contact-info {
@@ -50,10 +47,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 제목과 소개 (가운데 정렬, 반응형 글씨 크기 및 Small Caps 적용)
+# title
 st.markdown("<h1 style='text-align: center; font-variant: small-caps; font-size: 3.5vw;'>Minhyuk Choi</h1>", unsafe_allow_html=True)
 
-# 기본 정보
+# contact
 st.markdown("""
     <div class="contact-info">
         <p>
