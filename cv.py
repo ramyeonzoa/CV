@@ -1,9 +1,11 @@
 import streamlit as st
 
+# Font Awesome 스타일을 포함한 HTML 추가
 st.markdown("""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 """, unsafe_allow_html=True)
 
+# 스타일 추가
 st.markdown("""
     <style>
         .contact-info {
@@ -66,10 +68,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# TITLE
+# 제목과 소개 (가운데 정렬, 반응형 글씨 크기 및 Small Caps 적용)
 st.markdown("<h1 style='text-align: center; font-variant: small-caps;'>Minhyuk Choi</h1>", unsafe_allow_html=True)
 
-# Contacts
+# 기본 정보
 st.markdown("""
     <div class="contact-info">
         <p>
@@ -86,7 +88,7 @@ st.markdown("""
 st.markdown("---")
 st.markdown("<h2 class='section-title'>Interests</h2>", unsafe_allow_html=True)
 st.write("""
-I am currently interested in Machine Learning and Information Security. After this semester, I plan to study Algorithms, Backend Development, Machine Learning, Mathematics, and English.
+I am currently studying 'Deep Learning', 'Spring Framework', 'Linux', and 'Digital Engineering', and I have a strong interest in Algorithm (Problem Solving) and Theoretical Computer Science. After this semester, I plan to study more about Mathematics and Statistics.
 """)
 
 # Educations
@@ -97,7 +99,7 @@ st.markdown("""
         <div class="left">
             <strong>Inha Technical College</strong><br>
             <em>Majoring in Computer Systems Engineering</em>
-            <div>GPA: <b>4.43</b> / 4.5</div>
+            <div>GPA: <b>4.44</b> / 4.5</div>
         </div>
         <div class="right">
             <strong>Mar 2018 – Current</strong><br>
@@ -141,4 +143,4 @@ st.markdown("""
 st.markdown("---")
 
 # 끝
-# st.write("Thank you for reviewing my CV!")
+st.write("Thank you for reviewing my CV!")
